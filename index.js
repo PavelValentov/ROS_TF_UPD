@@ -78,5 +78,5 @@ tfClient.subscribe('body', function(tf) {
   // const size = Object.size(tf);
   const JS = JSON.stringify(tf);
   const size = JS.length;
-  client.send('Hello World!',0, size, 9988, '127.0.0.1');
+  client.send(JS,0, size, 9988, '127.0.0.1');
 });
